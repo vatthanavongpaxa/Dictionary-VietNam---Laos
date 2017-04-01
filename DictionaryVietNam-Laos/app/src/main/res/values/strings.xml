@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dictionary VietNam - Laos</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_book_mark">BookMarkActivity</string>
+</resources>
