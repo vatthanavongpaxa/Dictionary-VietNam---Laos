@@ -3,14 +3,10 @@ package myfriend.com.dictionaryvietnam_laos;
 import android.content.Intent;
 import android.database.SQLException;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,11 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import myfriend.com.dictionaryvietnam_laos.database.DatabaseHelper;
@@ -100,11 +93,11 @@ public class MainActivity extends AppCompatActivity {
         listView_listWords.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this,BookMarkActivity.class);
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
                 Word word = arr.get(position);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("WORD", word);
-                intent.putExtra("DATA",bundle);
+                intent.putExtra("DATA", bundle);
                 startActivity(intent);
             }
         });
@@ -144,8 +137,22 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+        switch (id) {
+            case R.id.action_bookmark:
+                startActivity(new Intent(MainActivity.this, BookmarkActivity.class));
+                break;
+            case R.id.action_settings:
+                break;
+            case R.id.action_about:
+                break;
+            case R.id.action_exit:
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

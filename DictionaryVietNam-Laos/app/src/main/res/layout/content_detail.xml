@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="myfriend.com.dictionaryvietnam_laos.BookMarkActivity"
-    tools:showIn="@layout/activity_book_mark">
+    tools:context="myfriend.com.dictionaryvietnam_laos.DetailActivity"
+    tools:showIn="@layout/activity_detail">
 
     <LinearLayout
         android:layout_width="344dp"

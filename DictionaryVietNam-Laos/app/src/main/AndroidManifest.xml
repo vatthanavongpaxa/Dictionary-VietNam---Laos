@@ -20,9 +20,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BookMarkActivity"
+            android:name=".DetailActivity"
             android:label="@string/title_activity_book_mark"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BookmarkActivity"></activity>
     </application>
 
 </manifest>

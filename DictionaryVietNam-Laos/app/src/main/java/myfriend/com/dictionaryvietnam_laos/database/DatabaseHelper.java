@@ -36,7 +36,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void createDatabase() throws IOException {
         boolean dbExist = checkDatabase();
         if (dbExist) {
-
         } else {
             this.getReadableDatabase();
             try {
@@ -58,7 +57,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } catch (Exception e) {
             throw e;
         }
-    }public void unBookMark(int id) {
+    }
+
+    public void unBookMark(int id) {
         ContentValues values = new ContentValues();
         values.put("BOOKMARK", 0);
         String sql = "UPDATE TUDIEN SET BOOKMARK = 0 WHERE ID = " + id;
@@ -159,4 +160,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cursor.close();
         return arr;
     }
+
+    public ArrayList<Word> getListBookmark() {
+        Word w = null;
+        ArrayList<Word> arr = new ArrayList<>();
+        Cursor cursor = mDatabase.query("TUDIEN", null, "BOOKMARK = 1", null, null, null, null);
+        cursor.moveToFirst();
+        while ((!cursor.isAfterLast()))
+        {
+            w = new Word(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3));
+            arr.add(w);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return  arr;
+    }
+
 }
