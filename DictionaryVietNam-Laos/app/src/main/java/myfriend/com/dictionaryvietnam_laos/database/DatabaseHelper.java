@@ -148,8 +148,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Word w = null;
         ArrayList<Word> arr = new ArrayList<>();
         Cursor cursor = mDatabase.query("TUDIEN", null, "VNWORD LIKE ? ", new String[]{_vnword + "%"}, null, null, null);
-//        String sql = "SELECT * FROM TUDIEN WHERE VNWORD LIKE '"+ _vnword + "%'";
-//        Cursor cursor = mDatabase.rawQuery(sql,null);
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {

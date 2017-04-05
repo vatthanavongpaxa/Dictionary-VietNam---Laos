@@ -2,4 +2,9 @@
     <string name="app_name">Dictionary VietNam - Laos</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_book_mark">BookMarkActivity</string>
+    <string name="about">\t The free offline software Viet-Lao Dictionary application explains the meaning of Viet Name - Lao words!\n\tIt’s work offline and won’t further download Features:\n\n
+        • Quick search.\n • User-Friendly interface.\n
+        • Support for Laos student studying, working\n
+        \t\t and traveling in Viet Nam.\n
+        • Easy bookmark for your Word.</string>
 </resources>

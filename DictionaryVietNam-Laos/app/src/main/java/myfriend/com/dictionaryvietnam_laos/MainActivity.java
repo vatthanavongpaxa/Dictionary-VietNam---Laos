@@ -3,6 +3,7 @@ package myfriend.com.dictionaryvietnam_laos;
 import android.content.Intent;
 import android.database.SQLException;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -144,9 +145,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_bookmark:
                 startActivity(new Intent(MainActivity.this, BookmarkActivity.class));
                 break;
-            case R.id.action_settings:
-                break;
             case R.id.action_about:
+                startActivity(new Intent(MainActivity.this,AboutActivity.class));
                 break;
             case R.id.action_exit:
                 Intent intent = new Intent(Intent.ACTION_MAIN);
