@@ -21,12 +21,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ຄຳສັບ:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="italic|bold" />
 
         <TextView
             android:id="@+id/textView_vnWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:text="VNWord"
             android:textColor="#000000"
             android:textSize="25dp"
