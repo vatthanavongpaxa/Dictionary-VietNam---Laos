@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.List;
 
 import myfriend.com.dictionaryvietnam_laos.model.Word;
 
@@ -22,10 +21,10 @@ import myfriend.com.dictionaryvietnam_laos.model.Word;
  */
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    String DB_Path;
     private static String DB_NAME = "db_TUDIEN.db";
-    private SQLiteDatabase mDatabase;
     private final Context mContext;
+    String DB_Path;
+    private SQLiteDatabase mDatabase;
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, 1);
@@ -164,14 +163,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ArrayList<Word> arr = new ArrayList<>();
         Cursor cursor = mDatabase.query("TUDIEN", null, "BOOKMARK = 1", null, null, null, null);
         cursor.moveToFirst();
-        while ((!cursor.isAfterLast()))
-        {
+        while ((!cursor.isAfterLast())) {
             w = new Word(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3));
             arr.add(w);
             cursor.moveToNext();
         }
         cursor.close();
-        return  arr;
+        return arr;
     }
 
 }

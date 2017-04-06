@@ -3,7 +3,6 @@ package myfriend.com.dictionaryvietnam_laos;
 import android.content.Intent;
 import android.database.SQLException;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -38,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        toolbar.setNavigationIcon(R.mipmap.ic_launcher_tudien);
 
         myDbHelper = new DatabaseHelper(MainActivity.this);
         copyCheckDatabase();
-
         //Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
         bindWidgets();
         setWidgetEventListener();
@@ -62,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setWidgetEventListener() {
+        imageButton_clear.setVisibility(View.GONE);
         imageButton_clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,15 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
+        int id = item.getItemId();
         switch (id) {
             case R.id.action_bookmark:
                 startActivity(new Intent(MainActivity.this, BookmarkActivity.class));

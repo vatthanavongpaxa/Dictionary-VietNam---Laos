@@ -17,13 +17,13 @@ import myfriend.com.dictionaryvietnam_laos.model.Word;
 
 public class DetailActivity extends AppCompatActivity {
 
+    DatabaseHelper myDbHelper;
+    Bundle bundle;
+    Intent getIndex;
     private TextView textView_laWord;
     private TextView textView_vnWord;
     private ImageButton imageButton_bookMark;
-    DatabaseHelper myDbHelper;
     private Word word;
-    Bundle bundle;
-    Intent getIndex;
     private FloatingActionButton fab;
     private Word w;
     private Button button_bookmark;
@@ -46,8 +46,6 @@ public class DetailActivity extends AppCompatActivity {
         w = myDbHelper.getWord(word.getId());
         bindWidgets();
         setWidgetEventListner();
-
-
     }
 
     private void setWidgetEventListner() {
