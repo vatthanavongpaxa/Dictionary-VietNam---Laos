@@ -1,0 +1,13 @@
+D:\Program\FormProject\FormProject\bin\Debug\FormProject.exe.config
+D:\Program\FormProject\FormProject\bin\Debug\FormProject.exe
+D:\Program\FormProject\FormProject\bin\Debug\FormProject.pdb
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.csprojResolveAssemblyReference.cache
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.Form1.resources
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.Properties.Resources.resources
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.csproj.GenerateResource.Cache
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.exe
+D:\Program\FormProject\FormProject\obj\Debug\FormProject.pdb
+D:\Program\FormProject\FormProject\bin\Debug\stdole.dll
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\bin\Debug\FormProject.exe.config
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.exe
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.pdb

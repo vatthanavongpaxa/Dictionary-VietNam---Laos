@@ -1,6 +1,5 @@
 package myfriend.com.dictionaryvietnam_laos.model;
 
-import java.io.InputStream;
 import java.io.Serializable;
 
 /**
@@ -12,6 +11,13 @@ public class Word implements Serializable {
     private String VNWORD;
     private String LAWORD;
     private int BOOKMARK;
+
+    public Word(int id, String VNWORD, String LAWORD, int BOOKMARK) {
+        this.id = id;
+        this.VNWORD = VNWORD;
+        this.LAWORD = LAWORD;
+        this.BOOKMARK = BOOKMARK;
+    }
 
     public int getBOOKMARK() {
         return BOOKMARK;
@@ -43,13 +49,6 @@ public class Word implements Serializable {
 
     public void setLAWORD(String LAWORD) {
         this.LAWORD = LAWORD;
-    }
-
-    public Word(int id, String VNWORD, String LAWORD, int BOOKMARK) {
-        this.id = id;
-        this.VNWORD = VNWORD;
-        this.LAWORD = LAWORD;
-        this.BOOKMARK = BOOKMARK;
     }
 
     @Override

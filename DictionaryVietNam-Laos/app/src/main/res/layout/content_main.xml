@@ -28,9 +28,9 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:drawableLeft="@drawable/ic_action_search"
+            android:focusableInTouchMode="true"
             android:hint="Search:)"
-            android:inputType="text"
-            android:focusableInTouchMode="true"/>
+            android:inputType="text" />
 
         <ImageButton
             android:id="@+id/imageButton_clear"

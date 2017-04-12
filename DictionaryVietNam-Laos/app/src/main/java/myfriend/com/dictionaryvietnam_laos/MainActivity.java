@@ -23,11 +23,11 @@ import myfriend.com.dictionaryvietnam_laos.database.DatabaseHelper;
 import myfriend.com.dictionaryvietnam_laos.model.Word;
 
 public class MainActivity extends AppCompatActivity {
-    private ListView listView_listWords;
     DatabaseHelper myDbHelper;
-    private EditText editText_searchWord;
     ArrayAdapter adapter;
     ArrayList<Word> arr;
+    private ListView listView_listWords;
+    private EditText editText_searchWord;
     private ImageButton imageButton_clear;
 
     @Override
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BookmarkActivity.class));
                 break;
             case R.id.action_about:
-                startActivity(new Intent(MainActivity.this,AboutActivity.class));
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 break;
             case R.id.action_exit:
                 Intent intent = new Intent(Intent.ACTION_MAIN);

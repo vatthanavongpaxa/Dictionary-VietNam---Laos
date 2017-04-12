@@ -37,6 +37,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (dbExist) {
         } else {
             this.getReadableDatabase();
+
             try {
                 copyDataBase();
             } catch (IOException e) {

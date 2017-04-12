@@ -20,15 +20,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/text_nhom"
         android:layout_width="wrap_content"
         android:layout_height="17dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="26dp"
         android:text="MyFriend"
         android:textStyle="italic|bold"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="26dp" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
