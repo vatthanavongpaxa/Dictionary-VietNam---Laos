@@ -11,3 +11,9 @@ D:\Program\FormProject\FormProject\bin\Debug\stdole.dll
 C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\bin\Debug\FormProject.exe.config
 C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.exe
 C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.pdb
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\bin\Debug\FormProject.exe
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\bin\Debug\FormProject.pdb
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.csprojResolveAssemblyReference.cache
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.Form1.resources
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.Properties.Resources.resources
+C:\Users\vatth\OneDrive\Dictionary VietNam - Laos\FormProject\FormProject\obj\Debug\FormProject.csproj.GenerateResource.Cache
